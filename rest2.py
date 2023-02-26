@@ -3,9 +3,9 @@ import os
 from spotipy.oauth2 import SpotifyOAuth
 
 # Replace with your Spotify client ID, client secret, and redirect URI
-auth_manager = SpotifyOAuth(client_id='3a353c7dc3ee4916bba070d176bffce1',
-                            client_secret='2c30693d418b4de0bd9be73746a38d06',
-                            redirect_uri='http://its-codee.com',
+auth_manager = SpotifyOAuth(client_id='',
+                            client_secret='',
+                            redirect_uri='',
                             scope=['playlist-read-private', 'user-library-read'])
 
 sp = spotipy.Spotify(auth_manager=auth_manager)
