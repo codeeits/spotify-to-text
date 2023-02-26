@@ -1,21 +1,38 @@
-# spotify-to-text
-A simple way to convert your spotify playlist to a text document
+# Spotify Playlist Song Extractor
 
-## What it is?
-The script utilizes the SpotifyOAuth authentication flow to obtain an access token, which allows the user to retrieve information about their Spotify account, such as their playlists and the tracks within those playlists.
+This Python script allows you to extract all the songs from a Spotify playlist and save them to a text file. The text file will contain the name of each song followed by the name of the artist.
 
-The script can be run from the command line, with the user providing their client ID, client secret, and redirect URI as arguments. Once authenticated, the user can specify a playlist ID to retrieve the tracks within that playlist. The script then retrieves the track information and writes it to a text file named "songs.txt".
+## Requirements
+Python 3.x
+spotipy 2.19.0
 
-The script makes use of the Spotipy library to simplify interactions with the Spotify Web API. The library provides functions for retrieving various types of data from the API, such as user information, playlists, tracks, and albums. The library also handles the authentication flow required by the Spotify Web API.
+## Installation
 
-The authentication flow used by the script is the SpotifyOAuth flow, which requires the user to provide their client ID, client secret, and redirect URI. The flow allows the user to grant the script access to their Spotify account, which allows the script to interact with their account and retrieve information about their playlists and tracks.
+1. Install Python 3.x on your computer.
+2. Clone this repository or download the ZIP file and extract it.
+3. Open a command prompt or terminal window.
+4. Navigate to the directory where the repository was cloned or extracted.
+5. Install the required Python modules by running the following command:
+` pip install -r requirements.txt `
 
-## Installing
-Supposing you already have installed python, the following procces for running is fairly simple.
+## Usage
+1. Obtain your Spotify API credentials by following the instructions on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+2. Update the `client_id`, `client_secret`, `redirect_uri`, and `playlist_id` variables in the `rest2.py` script with your own values.
+3. Run the script by executing the following command:
+```python rest2.py```
+4. The script will prompt you to log in to your Spotify account. Follow the instructions in the command prompt or terminal window to log in.
+5. The script will extract all the songs from the specified Spotify playlist and save them to a file.
 
-> For windows:
-> 1. Open the command prompt or PowerShell terminal;
-> 2. Navigate to the directory where the Python script is located using the ``` cd ``` command;
-> 3. Install the required Python modules using ``` pip install -r requirements.txt ```;
-> 4. Run the script using ``` python spotifysongs.py ```;
+## Running the Script on Windows
+1. Open the command prompt or PowerShell terminal.
+2. Navigate to the directory where the Python script is located using the `cd` command.
+3. Install the required Python modules using ``pip install -r requirements.txt``.
+4. Run the script using ``python rest2.py``.
 
+## Running the Script on macOS/Linux
+1. Open the terminal.
+2. Navigate to the directory where the Python script is located using the ``cd`` command.
+3. Install the required Python modules using ``pip install -r requirements.txt``, also try pip3 if pip doesn't work.
+4. Run the script using ``python rest2.py``.
+
+If you get a permission error while running the script on macOS/Linux, you may need to use sudo before the command to run the script as an administrator.
