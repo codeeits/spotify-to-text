@@ -1,7 +1,7 @@
 # spotify-to-text
 A simple way to convert your spotify playlist to a text document
 
-#What it is?
+## What it is?
 The script utilizes the SpotifyOAuth authentication flow to obtain an access token, which allows the user to retrieve information about their Spotify account, such as their playlists and the tracks within those playlists.
 
 The script can be run from the command line, with the user providing their client ID, client secret, and redirect URI as arguments. Once authenticated, the user can specify a playlist ID to retrieve the tracks within that playlist. The script then retrieves the track information and writes it to a text file named "songs.txt".
@@ -10,5 +10,12 @@ The script makes use of the Spotipy library to simplify interactions with the Sp
 
 The authentication flow used by the script is the SpotifyOAuth flow, which requires the user to provide their client ID, client secret, and redirect URI. The flow allows the user to grant the script access to their Spotify account, which allows the script to interact with their account and retrieve information about their playlists and tracks.
 
-#Installing
+## Installing
+Supposing you already have installed python, the following procces for running is fairly simple.
+
+> For windows:
+> 1. Open the command prompt or PowerShell terminal;
+> 2. Navigate to the directory where the Python script is located using the ``` cd ``` command;
+> 3. Install the required Python modules using ``` pip install -r requirements.txt ```;
+> 4. Run the script using ``` python spotifysongs.py ```;
 
